@@ -1,0 +1,257 @@
+/* CSS declarations go here */
+body {
+  font-family: sans-serif;
+  background-color: #E4E6EA;
+  /* background-image: linear-gradient(to bottom, #1a2a6c, #b21f1f, #fdbb2d 100%); */
+  background-attachment: fixed;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  padding: 0;
+  margin: 0;
+
+  font-size: 14px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  min-height: 100%;
+  background: #E4E6EA;
+}
+
+.error-message {
+  background-color: #FFD2D2;
+  color: #D8000C;
+  padding: 1em;
+}
+
+.success-message {
+  background-color: #DFF2BF;
+  color: #4F8A10;
+  padding: 1em;
+}
+
+header {
+  /* background-image: linear-gradient(to bottom, #1a2a6c, #ffffff 100%); */
+  padding: 20px 15px 15px 15px;
+  position: relative;
+  background-color: white;
+  color: #1F3B84;
+}
+
+.title {
+  padding: 30px 10px 10px 10px;
+  color: #1F3B84;
+}
+
+.radio-buttons {
+  background: #3350A3;
+  padding: 0px 0px 0px 0px;
+  position: relative;
+}
+
+#login-buttons {
+  display: block;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin: 0;
+  margin-bottom: 10px;
+  display: inline-block;
+  margin-right: 1em;
+  color: #1F3B84;
+}
+
+h2 {
+  font-size: 1em;
+  padding: 5px 0px 5px 10px;
+  margin: 0;
+  display: inline-block;
+  margin-right: 1em;
+  color: #1F3B84;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 0px;
+    margin-top: -5px;
+}
+
+td.role {
+    width: 10px;
+}
+
+td.email {
+    column-width: 80%;
+}
+
+form {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  padding: 5px 5px 5px 5px;
+  position: relative;
+}
+
+.radio-buttons {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  color: white;
+}
+
+.main-form input {
+  box-sizing: border-box;
+  padding: 5px 5px 5px 5px;
+  background: transparent;
+  border: transparent;
+  border-width: 1px;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 80px;
+  font-size: 1em;
+}
+
+.small-form:hover {
+  background-color: #fbfbfb;
+}
+
+.small-form input {
+  box-sizing: border-box;
+  padding: 2px 2px;
+  background: transparent;
+  border: transparent;
+  border-width: 1px;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 1em;
+}
+
+
+button {
+    background-color: #1F3B84;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border: solid;
+}
+
+button:hover {
+    background-color: white;
+    color: #1F3B84;
+}
+
+.delete {
+  color: #1F3B84;
+  padding: 1px 1px;
+  float: right;
+  font-weight: bold;
+  background: none;
+  font-size: 1em;
+  position: relative;
+  border: transparent;
+  padding-right: 15px;
+}
+
+button.delete:hover {
+    background-color: white;
+    color: #D8000C;
+}
+
+input[type="date"]:before {
+  content: attr(placeholder) !important;
+  color: grey;
+  font-family: sans-serif;
+  margin-right: 0.5em;
+}
+input[type="date"]:focus:before,
+input[type="date"]:valid:before {
+  content: "";
+}
+
+input[type="datetime-local"]:before {
+  content: attr(placeholder) !important;
+  color: grey;
+  font-family: sans-serif;
+  margin-right: 0.5em;
+}
+input[type="datetime-local"]:focus:before,
+input[type="datetime-local"]:valid:before {
+  content: "";
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul.small {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+li {
+  position: relative;
+  list-style: none;
+  background-color: white;
+  margin-top: 20px;
+  padding: 0px 2px 2px 20px;
+}
+
+li.text {
+  margin-left: 10px;
+}
+
+li.small {
+  position: relative;
+  list-style-position: inside;
+  list-style-type: disc;
+  padding-left: 13px;
+  margin-top: 3px;
+  padding-right: 10px;
+}
+
+li.linethrough {
+  position: relative;
+  list-style-position: inside;
+  list-style-type: disc;
+  padding-left: 13px;
+  margin-top: 3px;
+  padding-right: 10px;
+  text-decoration: line-through;
+  color: grey;
+}
+
+li.small-no-symbol {
+  position: relative;
+  list-style-position: inside;
+  list-style-type: none;
+  padding-left: 19px;
+  margin-top: 3px;
+  padding-right: 10px;
+}
+
+@media (max-width: 600px) {
+  li {
+    padding: 12px 15px;
+  }
+
+  .search {
+    width: 150px;
+    clear: both;
+  }
+
+  .main-form input {
+    padding-bottom: 5px;
+  }
+}
